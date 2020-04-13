@@ -1,8 +1,8 @@
 <?php
 /* 
- * MUHAMMAD FADHIIL RACHMAN � 2016 Made This
+ * Pace Usa Offical Bot © 2013 Made This
  *
- * fadhiilrachman@gmail.com - fadilus.com
+ * developerpaceusa@gmail.com - 
  *
  */
 @ini_set('memory_limit', '-1');
@@ -15,7 +15,7 @@ error_reporting(0);
 date_default_timezone_set('Asia/Jakarta');
 header("Content-Type: text/plain");
 
-$FADILUS=array(
+$Pace=array(
 	'ig' => array(
 		/*
 			SILAHKAN CING DI MASUKIN PELAN PELAN :V
@@ -33,6 +33,6 @@ $FADILUS=array(
 	)
 );
 
-if(!file_exists( $FADILUS['config'][5] )) {
-	mkdir($FADILUS['config'][5].'/' , 0777);
+if(!file_exists( $Pace['config'][5] )) {
+	mkdir($Pace['config'][5].'/' , 0777);
 }
