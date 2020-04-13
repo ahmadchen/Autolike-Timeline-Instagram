@@ -1,9 +1,9 @@
 <?php
 
 /* 
- * MUHAMMAD FADHIIL RACHMAN © 2016 Made This
+ * Pace Usa Offical Bot © 2013 Made This
  *
- * fadhiilrachman@gmail.com - fadilus.com
+ * developerpaceusa@gmail.com - 
  *
  */
 
@@ -24,11 +24,11 @@ class Instagram
 
   public function __construct()
   {
-      global $FADILUS;
+      global $Pace;
       $this->username = $FADILUS['ig'][0];
       $this->password = $FADILUS['ig'][1];
       $this->uuid = $this->generateUUID(true);
-      $this->device_id = $this->generateDeviceId(md5($FADILUS['ig'][0].$FADILUS['ig'][1]));
+      $this->device_id = $this->generateDeviceId(md5($FADILUS['ig'][0].$Pace['ig'][1]));
       if (!file_exists( 'cache' )) {
         mkdir('cache/' , 0777);
       }
@@ -131,7 +131,7 @@ class Instagram
 
     public function generateSignature($data)
     {
-        global $FADILUS;
+        global $Pace;
         $hash = hash_hmac('sha256', $data, $FADILUS['ig'][4]);
 
         return 'ig_sig_key_version=4&signed_body='.$hash.'.'.urlencode($data);
