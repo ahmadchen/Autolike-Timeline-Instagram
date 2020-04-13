@@ -1,14 +1,14 @@
 <?php
 /* 
- * MUHAMMAD FADHIIL RACHMAN © 2016 Made This
+ * Pace Usa Offical Bot © 2013 Made This
  *
- * fadhiilrachman@gmail.com - fadilus.com
+ * developerpaceusa@gmail.com - 
  *
  */
 require 'Instagram.php';
 ////////////
 if($_SERVER['REQUEST_METHOD']!=='GET') {
-	die('Fadhiil Rachman Ganteng');
+	die('Pace Usa Gans');
 }
 $ig = new Instagram();
 $login=$ig->login();
